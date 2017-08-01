@@ -1,0 +1,83 @@
+.app {
+margin: 0px;
+padding: 0px;
+height: 100vh;
+width: 100vw;
+overflow-x: hidden;
+}
+
+.header {
+  height: 6.7%;
+  width: 100%;
+  text-align: center;
+  font-size: large;
+  line-height: 6.7vh;
+  color: rgba(0, 0, 0, 87);
+  background-color: PINK;
+  overflow-x: hidden;
+}
+
+.body {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  align-items: stretch;
+  height: 86.6vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.left {
+  order: 1;
+  flex: 1;
+  height: 100%;
+  width: calc(50vw - 480px);
+  background-color: RED;
+  overflow-x: hidden;
+}
+
+.center {
+  order: 2;
+  height: 100%;
+  width: 960px;
+  background-color: GREEN;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.noMargin {
+  margin: 0;
+}
+
+.right {
+  order: 3;
+  flex: 1;
+  height: 100%;
+  width: calc(50vw - 480px);
+  background-color: BLUE;
+}
+
+.footer {
+  height: 6.7%;
+  width: 100%;
+  font-size: small;
+  text-align: center;
+  line-height: 6.7vh;
+  color: rgba(0, 0, 0, 87);
+  background-color: GREY;
+}
+
+.button {
+  color: rgba(0, 0, 0, 87);
+  border-radius: 150px;
+  line-height: 150px;
+  font-size: medium;
+  width: 150px;
+  height: 150px;
+  background-color: WHITE;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
