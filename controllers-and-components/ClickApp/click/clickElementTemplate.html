@@ -1,0 +1,16 @@
+<div class="bodyElement">
+  <div class="left">
+      <button class="multiplier" ng-click="$ctrl.incrementMult($ctrl.values)" ng-style="$ctrl.values.buttoncolorA">*{{$ctrl.values.multshow}}</button>
+      <div class="multprice">
+        <br />Multiplier Cost:<br /> 10 Shrute Bucks<br />
+      </div>
+    </div>
+    <div class="center">
+      <button class="button" ng-click="$ctrl.incrementTotal($ctrl.values)">+{{$ctrl.values.multiplier}}</button>
+    </div>
+    <div class="right">
+      <button class="autoclick" ng-click="$ctrl.autoClicker($ctrl.values)" ng-style="$ctrl.values.buttoncolorB">+1</button>
+      <div class="autocounter"><br />Autoclickers: <br />{{$ctrl.values.autoclicker}}<br /></div>
+      <div class="price"><br />Autoclicker Cost:<br /> 100 Shrute Bucks<br /></div>
+    </div>
+  </div>

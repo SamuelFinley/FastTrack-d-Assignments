@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app='clickModule'>
+  <head>
+    <meta charset="utf-8">
+    <title>the holy grail</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="ClickApp/app.js"></script>
+    <script src="ClickApp/click/clickService.js"></script>
+    <script src="ClickApp/click/clickController.js"></script>
+    <script src="ClickApp/click/clickElementComponent.js"></script>
+    <script src="ClickApp/click/resetElementComponent.js"></script>
+  </head>
+  <body class="noMargin" ng-controller='clickController as clickCtrl'>
+    <div class="app">
+      <header-element values='clickCtrl.values' reset="clickCtrl.clickService.reset"></header-element>
+      <body-element values='clickCtrl.values' buttoncolor='clickCtrl.buttoncolor' increment-Mult="clickCtrl.clickService.incrementMult" increment-total="clickCtrl.clickService.incrementTotal" auto-clicker="clickCtrl.clickService.autoClicker"></body-element>
+      <div class="footer">
+        Made w/ &lt;3 @ FastTrack'D
+      </div>
+    </div>
+  </body>
+</html>
